@@ -4,8 +4,8 @@ class NewQubit() extends NonterminalExpression() {
 
       // Map may have collisions, handle this
       var qubit = new Qubit();
-      context = qubit.evaluate(context);
       context.inputIndex = context.inputIndex + 1;
+      context = qubit.evaluate(context);
       context.state += (context.input(context.inputIndex) -> qubit);
       context.objectName = context.input(context.inputIndex);
 

@@ -7,8 +7,9 @@ class Selector() {
       val token = context.input(context.inputIndex);
       if(token == NewQubitToken)
          new NewQubit();
+      else if(token == HadamardGateToken)
+         new HadamardGate();
       else
          new Qubit();
-
    }
 }
