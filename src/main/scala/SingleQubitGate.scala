@@ -1,6 +1,7 @@
 import breeze.linalg._
+import breeze.math._
 
-class SingleQubitGate(gate: DenseMatrix[Double]) extends NonterminalExpression() {
+class SingleQubitGate(gate: DenseMatrix[Complex]) extends NonterminalExpression() {
    val transformationMatrix = gate;
    def evaluate(ctx: Context): Context = {
       var context = ctx;
@@ -13,16 +14,16 @@ class SingleQubitGate(gate: DenseMatrix[Double]) extends NonterminalExpression()
 
       var operand = context.state(context.objectName);
 
-      /*
+
       // For debugging
       println("objectName:" + context.objectName);
       println(operand.superpositionVector);
       println(gate);
-      println(operand.superpositionVector.t * gate);
-      */
+      println((operand.superpositionVector.t * gate).t.toDenseVector);
+
 
       context.state(context.objectName).superpositionVector
-         = (operand.superpositionVector.t * gate).t;
+         = (operand.superpositionVector.t * gate).t.toDenseVector;
 
       return context;
    }

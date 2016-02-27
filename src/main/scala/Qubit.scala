@@ -1,8 +1,9 @@
 import breeze.linalg._
+import breeze.math._
 
 class Qubit() extends TerminalExpression() {
 
-   var superpositionVector = DenseVector.zeros[Double](2);
+   var superpositionVector = DenseVector.zeros[Complex](2);
 
    def evaluate(context: Context): Context = {
       randomizeState();
@@ -13,7 +14,7 @@ class Qubit() extends TerminalExpression() {
       val r = scala.util.Random;
       val rand = r.nextDouble();
       val randComp = 1 - rand;
-      superpositionVector(0) = math.sqrt(rand);
-      superpositionVector(1) = math.sqrt(randComp);
+      superpositionVector(0) = Complex(math.sqrt(rand), 0.0);
+      superpositionVector(1) = Complex(math.sqrt(randComp), 0.0);
    }
 }
