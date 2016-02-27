@@ -10,15 +10,16 @@ class NewQubit() extends NonterminalExpression() {
       context.objectName = context.input(context.inputIndex);
 
       // For debugging
+      println("");
       for ((k,v) <- context.state) {
          println(s"key: $k, value: $v");
          println(
-            "superpositionVector # "
-            + context.inputIndex
+            "superpositionVector"
             + ": "
             + v.superpositionVector
          );
       }
+      println("");
 
       return context;
    }
