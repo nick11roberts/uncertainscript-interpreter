@@ -11,9 +11,14 @@ class SingleQubitGate(gate: DenseMatrix[Double]) extends NonterminalExpression()
       var expression = selector.select(context);
       context = expression.evaluate(context);
 
+      // For debugging 
       var operand = context.state(context.objectName);
-
+      println(operand.superpositionVector);
       println(gate);
+      println(operand.superpositionVector.t * gate);
+
+      context.state(context.objectName).superpositionVector
+         = (operand.superpositionVector.t * gate).t;
 
       return context;
    }
