@@ -2,12 +2,10 @@ import breeze.linalg._
 
 class Qubit() extends TerminalExpression() {
 
-   var superpositionVector = DenseVector[Double](2);
+   var superpositionVector = DenseVector.zeros[Double](2);
 
    def evaluate(context: Context): Context = {
       randomizeState();
-      context.state += (context.input(context.inputIndex) -> this);
-      context.objectName = context.input(context.inputIndex);
       return context;
    }
 

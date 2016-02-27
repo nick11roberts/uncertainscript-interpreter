@@ -10,5 +10,6 @@ class Interpreter(input: String) {
    );
 
    var selector = new Selector();
-   var expression = selector.select("asdfas", context);
+   var expression = selector.select(context);
+   context = expression.evaluate(context);
 }

@@ -1,3 +1,3 @@
 object Main extends App {
-   val interpreter = new Interpreter("Test 123");
+   val interpreter = new Interpreter("qubit w");
 }

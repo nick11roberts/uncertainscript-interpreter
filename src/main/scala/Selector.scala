@@ -1,8 +1,14 @@
 class Selector() {
-   def select(tokenString: String, context: Context): AbstractExpression = {
+   def select(context: Context): AbstractExpression = {
+      val NewQubitToken = "qubit";
+      val HadamardGateToken = "hadamard";
 
       // Parse it to the correct AbstractExpression
+      val token = context.input(context.inputIndex);
+      if(token == NewQubitToken)
+         new NewQubit();
+      else
+         new Qubit();
 
-      return new Qubit();
    }
 }
