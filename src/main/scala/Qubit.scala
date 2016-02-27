@@ -17,4 +17,13 @@ class Qubit() extends TerminalExpression() {
       superpositionVector(0) = Complex(math.sqrt(rand), 0.0);
       superpositionVector(1) = Complex(math.sqrt(randComp), 0.0);
    }
+
+   def readState(): Int = {
+      val r = scala.util.Random;
+      if(superpositionVector(0).real <= r.nextDouble()) {
+         0
+      } else {
+         1
+      }
+   }
 }

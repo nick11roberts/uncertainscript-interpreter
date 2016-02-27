@@ -10,14 +10,14 @@ class Interpreter {
       ""
    );
 
-   def interpret(input: String) {
+   def interpret(input: String): String = {
       context.input = input.trim.split("\\s+");
-
       var selector = new Selector();
       var expression = selector.select(context);
       context = expression.evaluate(context);
-
+      var out = context.output;
       resetContext;
+      out;
    }
 
    def resetContext {

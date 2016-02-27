@@ -1,9 +1,11 @@
 object Main extends App {
    var interpreter = new Interpreter();
-   interpreter.interpret("hadamard hadamard qubit q");
-   interpreter.interpret("qubit w");
-   interpreter.interpret("hadamard paulix w");
-   interpreter.interpret("pauliy paulix pauliz q");
-   interpreter.interpret("qubit e");
-   interpreter.interpret("pauliy e");
+   println(interpreter.interpret("hadamard hadamard qubit q"));
+   println(interpreter.interpret("qubit w"));
+   println(interpreter.interpret("hadamard paulix w"));
+   println(interpreter.interpret("pauliy paulix pauliz q"));
+   println(interpreter.interpret("qubit e"));
+   println(interpreter.interpret("pauliy e"));
+   println(interpreter.interpret("read e"));
+   println(interpreter.interpret("read q"));
 }

@@ -1,6 +1,7 @@
 class Selector() {
    def select(context: Context): AbstractExpression = {
       val NewQubitToken = "qubit";
+      val ReadQubitToken = "read";
       val HadamardGateToken = "hadamard";
       val PauliXGateToken = "paulix";
       val PauliYGateToken = "pauliy";
@@ -10,6 +11,8 @@ class Selector() {
       val token = context.input(context.inputIndex);
       if(token == NewQubitToken)
          new NewQubit();
+      else if(token == ReadQubitToken)
+         new ReadQubit();
       else if(token == HadamardGateToken)
          new HadamardGate();
       else if(token == PauliXGateToken)
