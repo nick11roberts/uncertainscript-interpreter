@@ -9,7 +9,10 @@ class NewQubit() extends NonterminalExpression() {
       context.state += (context.input(context.inputIndex) -> qubit);
       context.objectName = context.input(context.inputIndex);
 
-      for ((k,v) <- context.state) println(s"key: $k, value: $v")
+      for ((k,v) <- context.state) {
+         println(s"key: $k, value: $v");
+         println(v.superpositionVector);
+      }
 
       return context;
    }
