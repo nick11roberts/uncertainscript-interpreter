@@ -5,7 +5,7 @@ class Interpreter(input: String) {
       input.trim.split("\\s+"),
       0,
       "",
-      scala.collection.mutable.Map[String, DenseVector[Double]](),
+      scala.collection.mutable.Map[String, Qubit](),
       -1
    );
 
