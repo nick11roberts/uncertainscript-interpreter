@@ -1,2 +1,2 @@
-# uncertainscript-interpreter
-Interpreter for uncertainscript, a quantum scripting language. 
+# uncertaintyscript-interpreter
+Interpreter for uncertaintyscript, a quantum scripting language. 
