@@ -1,3 +1,3 @@
-class TerminalExpression(context: Context) extends AbstractExpression(context) {
-
+abstract class TerminalExpression() extends AbstractExpression() {
+   def evaluate(context: Context): Context;
 }

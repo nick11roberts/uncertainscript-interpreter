@@ -4,7 +4,8 @@ class Interpreter(input: String) {
    var context = new Context(
       input,
       "",
-      scala.collection.mutable.Map[String, DenseVector[Double]]()
+      scala.collection.mutable.Map[String, DenseVector[Double]](),
+      -1
    );
 
    var selector = new Selector();

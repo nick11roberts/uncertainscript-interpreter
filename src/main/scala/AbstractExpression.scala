@@ -1,3 +1,3 @@
-abstract class AbstractExpression(context: Context) {
-
+abstract class AbstractExpression() {
+   def evaluate(context: Context): Context;
 }

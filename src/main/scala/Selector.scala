@@ -1,7 +1,8 @@
 class Selector() {
    def select(token: String, context: Context): AbstractExpression = {
+
       // Parse it to the correct AbstractExpression
 
-      return new TerminalExpression(context);
+      return new Qubit();
    }
 }
