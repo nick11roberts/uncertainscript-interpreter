@@ -1,8 +1,9 @@
 import breeze.linalg._
 
 class Context(
-   var intput: String,
+   var input: Array[String],
+   var inputIndex: Int, 
    var output: String,
    var state: scala.collection.mutable.Map[String, DenseVector[Double]],
-   var index: Int
+   var objectIndex: Int
 );

@@ -1,5 +1,5 @@
 class Selector() {
-   def select(token: String, context: Context): AbstractExpression = {
+   def select(tokenString: String, context: Context): AbstractExpression = {
 
       // Parse it to the correct AbstractExpression
 

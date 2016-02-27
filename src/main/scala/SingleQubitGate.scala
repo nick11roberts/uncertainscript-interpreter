@@ -1,9 +1,9 @@
 import breeze.linalg._
 
-abstract class SingleQubitGate() extends NonterminalExpression() {
-   val transformationMatrix: DenseMatrix[Double];
-   val operand: AbstractExpression;
+class SingleQubitGate(gate: DenseMatrix[Double]) extends NonterminalExpression() {
+   val transformationMatrix = gate;
    def evaluate(context: Context): Context = {
+      // Perform single qubit transformation using transformationMatrix
       return context;
    }
 }

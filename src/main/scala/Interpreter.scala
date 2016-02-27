@@ -2,7 +2,8 @@ import breeze.linalg._
 
 class Interpreter(input: String) {
    var context = new Context(
-      input,
+      input.trim.split("\\s+"),
+      0,
       "",
       scala.collection.mutable.Map[String, DenseVector[Double]](),
       -1
