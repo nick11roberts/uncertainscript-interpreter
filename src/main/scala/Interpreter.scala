@@ -6,7 +6,7 @@ class Interpreter(input: String) {
       0,
       "",
       scala.collection.mutable.Map[String, Qubit](),
-      -1
+      ""
    );
 
    var selector = new Selector();

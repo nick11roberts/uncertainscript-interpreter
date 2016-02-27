@@ -5,5 +5,5 @@ class Context(
    var inputIndex: Int,
    var output: String,
    var state: scala.collection.mutable.Map[String, Qubit],
-   var objectIndex: Int
+   var objectName: String
 );
