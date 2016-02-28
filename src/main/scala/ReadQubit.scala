@@ -1,4 +1,4 @@
-class ReadQubit() extends NonterminalExpression() {
+class ReadQubit extends NonterminalExpression() {
    def evaluate(ctx: Context): Context = {
       var context = ctx;
 
@@ -14,6 +14,6 @@ class ReadQubit() extends NonterminalExpression() {
 
       context.state -= context.objectName;
 
-      return context;
+      context;
    }
 }

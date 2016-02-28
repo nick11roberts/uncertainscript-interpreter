@@ -8,4 +8,5 @@ object Main extends App {
    println(interpreter.interpret("pauliy e"));
    println(interpreter.interpret("read e"));
    println(interpreter.interpret("read q"));
+   println(interpreter.interpret("read qubit ndfgdfg"))
 }

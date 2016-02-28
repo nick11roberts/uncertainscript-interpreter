@@ -10,18 +10,18 @@ class Selector() {
       // Parse it to the correct AbstractExpression
       val token = context.input(context.inputIndex);
       if(token == NewQubitToken)
-         new NewQubit();
+         new NewQubit;
       else if(token == ReadQubitToken)
-         new ReadQubit();
+         new ReadQubit;
       else if(token == HadamardGateToken)
-         new HadamardGate();
+         new HadamardGate;
       else if(token == PauliXGateToken)
-         new PauliXGate();
+         new PauliXGate;
       else if(token == PauliYGateToken)
-         new PauliYGate();
+         new PauliYGate;
       else if(token == PauliZGateToken)
-         new PauliZGate();
+         new PauliZGate;
       else
-         new Qubit();
+         new Qubit;
    }
 }

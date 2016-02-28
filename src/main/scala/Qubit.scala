@@ -1,13 +1,13 @@
 import breeze.linalg._
 import breeze.math._
 
-class Qubit() extends TerminalExpression() {
+class Qubit extends TerminalExpression() {
 
    var superpositionVector = DenseVector.zeros[Complex](2);
 
    def evaluate(context: Context): Context = {
       randomizeState();
-      return context;
+      context;
    }
 
    def randomizeState() {

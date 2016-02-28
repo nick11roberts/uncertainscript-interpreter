@@ -25,6 +25,6 @@ class SingleQubitGate(gate: DenseMatrix[Complex]) extends NonterminalExpression(
       context.state(context.objectName).superpositionVector
          = (operand.superpositionVector.t * gate).t.toDenseVector;
 
-      return context;
+      context;
    }
 }

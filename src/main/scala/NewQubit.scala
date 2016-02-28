@@ -1,4 +1,4 @@
-class NewQubit() extends NonterminalExpression() {
+class NewQubit extends NonterminalExpression() {
    def evaluate(ctx: Context): Context = {
       var context = ctx;
 
@@ -23,6 +23,6 @@ class NewQubit() extends NonterminalExpression() {
       println("");
       */
 
-      return context;
+      context;
    }
 }
