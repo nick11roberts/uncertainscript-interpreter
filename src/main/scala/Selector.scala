@@ -1,4 +1,12 @@
-class Selector() {
+/** Used to choose the next command in the input.
+  */
+class Selector {
+
+   /** Chooses commands based on the context, generates a token.
+     *
+     * @param context the state information of the REPL
+     * @return token the token for the next piece of inut
+     */
    def select(context: Context): AbstractExpression = {
       val NewQubitToken = "qubit";
       val ReadQubitToken = "read";

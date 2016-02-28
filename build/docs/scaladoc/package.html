@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>root - uncertaintyscript-interpreter API - _root_</title>
+          <meta name="description" content="root - uncertaintyscript - interpreter API - root " />
+          <meta name="keywords" content="root uncertaintyscript interpreter API root " />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = 'index.html';
+            var hash = 'package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="lib/package_big.png" />
+        
+        <h1>root package</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">root</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="_root_.AbstractExpression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractExpressionextendsAnyRef"></a>
+      <a id="AbstractExpression:AbstractExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractExpression.html"><span class="name">AbstractExpression</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A general, abstract type of expression.</p>
+    </li><li name="_root_.Context" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ContextextendsAnyRef"></a>
+      <a id="Context:Context"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Context.html"><span class="name">Context</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The state information of the REPL session.</p>
+    </li><li name="_root_.HadamardGate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HadamardGateextendsSingleQubitGate"></a>
+      <a id="HadamardGate:HadamardGate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HadamardGate.html"><span class="name">HadamardGate</span></a><span class="result"> extends <a href="SingleQubitGate.html" class="extype" name="SingleQubitGate">SingleQubitGate</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Complex matrix representing the hadamard transformation.</p>
+    </li><li name="_root_.Interpreter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InterpreterextendsAnyRef"></a>
+      <a id="Interpreter:Interpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Interpreter.html"><span class="name">Interpreter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A tool for interpreting uncertaintyscript code.</p>
+    </li><li name="_root_.NewQubit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NewQubitextendsNonterminalExpression"></a>
+      <a id="NewQubit:NewQubit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NewQubit.html"><span class="name">NewQubit</span></a><span class="result"> extends <a href="NonterminalExpression.html" class="extype" name="NonterminalExpression">NonterminalExpression</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A qubit command that creates a new qubit with a given name.</p>
+    </li><li name="_root_.NonterminalExpression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NonterminalExpressionextendsAbstractExpression"></a>
+      <a id="NonterminalExpression:NonterminalExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NonterminalExpression.html"><span class="name">NonterminalExpression</span></a><span class="result"> extends <a href="AbstractExpression.html" class="extype" name="AbstractExpression">AbstractExpression</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A general, abstract type of expression that does not terminate.</p>
+    </li><li name="_root_.PauliXGate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PauliXGateextendsSingleQubitGate"></a>
+      <a id="PauliXGate:PauliXGate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PauliXGate.html"><span class="name">PauliXGate</span></a><span class="result"> extends <a href="SingleQubitGate.html" class="extype" name="SingleQubitGate">SingleQubitGate</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Complex matrix representing the Pauli-X transformation.</p>
+    </li><li name="_root_.PauliYGate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PauliYGateextendsSingleQubitGate"></a>
+      <a id="PauliYGate:PauliYGate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PauliYGate.html"><span class="name">PauliYGate</span></a><span class="result"> extends <a href="SingleQubitGate.html" class="extype" name="SingleQubitGate">SingleQubitGate</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Complex matrix representing the Pauli-Y transformation.</p>
+    </li><li name="_root_.PauliZGate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PauliZGateextendsSingleQubitGate"></a>
+      <a id="PauliZGate:PauliZGate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PauliZGate.html"><span class="name">PauliZGate</span></a><span class="result"> extends <a href="SingleQubitGate.html" class="extype" name="SingleQubitGate">SingleQubitGate</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Complex matrix representing the Pauli-Z transformation.</p>
+    </li><li name="_root_.Qubit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QubitextendsTerminalExpression"></a>
+      <a id="Qubit:Qubit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Qubit.html"><span class="name">Qubit</span></a><span class="result"> extends <a href="TerminalExpression.html" class="extype" name="TerminalExpression">TerminalExpression</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A quantum bit.</p>
+    </li><li name="_root_.ReadQubit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadQubitextendsNonterminalExpression"></a>
+      <a id="ReadQubit:ReadQubit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ReadQubit.html"><span class="name">ReadQubit</span></a><span class="result"> extends <a href="NonterminalExpression.html" class="extype" name="NonterminalExpression">NonterminalExpression</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A read command on a qubit.</p>
+    </li><li name="_root_.Selector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SelectorextendsAnyRef"></a>
+      <a id="Selector:Selector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Selector.html"><span class="name">Selector</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Used to choose the next command in the input.</p>
+    </li><li name="_root_.SingleQubitGate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SingleQubitGateextendsNonterminalExpression"></a>
+      <a id="SingleQubitGate:SingleQubitGate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleQubitGate.html"><span class="name">SingleQubitGate</span></a><span class="result"> extends <a href="NonterminalExpression.html" class="extype" name="NonterminalExpression">NonterminalExpression</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An abstraction of a single qubit quantum gate.</p>
+    </li><li name="_root_.TerminalExpression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TerminalExpressionextendsAbstractExpression"></a>
+      <a id="TerminalExpression:TerminalExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TerminalExpression.html"><span class="name">TerminalExpression</span></a><span class="result"> extends <a href="AbstractExpression.html" class="extype" name="AbstractExpression">AbstractExpression</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A general, abstract type of expression that terminates.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="_root_.Main" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Main"></a>
+      <a id="Main:Main"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Main$.html"><span class="name">Main</span></a><span class="result"> extends <span class="extype" name="scala.App">App</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">For testing purposes.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="lib/template.js"></script>
+    </body>
+      </html>

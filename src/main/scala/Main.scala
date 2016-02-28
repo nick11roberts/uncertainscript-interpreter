@@ -1,3 +1,5 @@
+/** For testing purposes. Tries various commands. 
+  */
 object Main extends App {
    var interpreter = new Interpreter();
    println(interpreter.interpret("hadamard hadamard qubit q"));
