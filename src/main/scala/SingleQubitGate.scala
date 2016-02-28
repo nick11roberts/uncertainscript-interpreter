@@ -1,8 +1,20 @@
 import breeze.linalg._
 import breeze.math._
 
+/** An abstraction of a single qubit quantum gate. Nonterminal,
+  * so internal node.
+  *
+  * @param gate a custom quantum gate in the form of a complex matrix
+  */
 class SingleQubitGate(gate: DenseMatrix[Complex]) extends NonterminalExpression() {
    val transformationMatrix = gate;
+
+   /** Alters the superposition vector of the qubit by performing a linear
+     * transformation on the vector. 
+     *
+     * @param ctx the state of the REPL
+     * @return context the state of the REPL
+     */
    def evaluate(ctx: Context): Context = {
       var context = ctx;
 

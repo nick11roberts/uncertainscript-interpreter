@@ -1,4 +1,14 @@
+/** A qubit command that creates a new qubit with a given name. Nonterminal,
+  * so it is an internal node.
+  */
 class NewQubit extends NonterminalExpression() {
+
+   /** Generates a new qubit token and passes the state of the REPL to the
+     * next token.
+     *
+     * @param ctx the state of the REPL
+     * @return context the state of the REPL
+     */
    def evaluate(ctx: Context): Context = {
       var context = ctx;
 
