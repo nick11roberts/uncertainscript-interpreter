@@ -33,7 +33,8 @@ class Qubit extends TerminalExpression() {
      */
    def readState(): Int = {
       val r = scala.util.Random;
-      if(superpositionVector(0).real <= r.nextDouble()) {
+      if(superpositionVector(0).real * superpositionVector(0).real
+         <= r.nextDouble()) {
          0
       } else {
          1

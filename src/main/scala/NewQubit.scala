@@ -20,7 +20,7 @@ class NewQubit extends NonterminalExpression() {
       context.objectName = context.input(context.inputIndex);
 
       // For debugging
-      /*
+
       println("");
       for ((k,v) <- context.state) {
          println(s"key: $k, value: $v");
@@ -31,7 +31,7 @@ class NewQubit extends NonterminalExpression() {
          );
       }
       println("");
-      */
+      
 
       context;
    }

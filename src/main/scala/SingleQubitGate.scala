@@ -10,7 +10,7 @@ class SingleQubitGate(gate: DenseMatrix[Complex]) extends NonterminalExpression(
    val transformationMatrix = gate;
 
    /** Alters the superposition vector of the qubit by performing a linear
-     * transformation on the vector. 
+     * transformation on the vector.
      *
      * @param ctx the state of the REPL
      * @return context the state of the REPL
@@ -27,12 +27,12 @@ class SingleQubitGate(gate: DenseMatrix[Complex]) extends NonterminalExpression(
       var operand = context.state(context.objectName);
 
       // For debugging
-      /*
+
       println("objectName:" + context.objectName);
       println(operand.superpositionVector);
       println(gate);
       println((operand.superpositionVector.t * gate).t.toDenseVector);
-      */
+      
 
       context.state(context.objectName).superpositionVector
          = (operand.superpositionVector.t * gate).t.toDenseVector;
