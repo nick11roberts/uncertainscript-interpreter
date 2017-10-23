@@ -14,7 +14,6 @@ Interpreter for UncertaintyScript, a quantum scripting language developed by a c
   * Thanks Richard Feynman!
 * Wanted to better understand the math behind quantum algorithm design
 * Wanted to understand why classical computers can’t simulate quantum computers
-  * Spoiler: this is because quantum gate operations are O(1) in nature and O(N^3) in implementation due to matrix multiplications
 
 ## How did you do this? 
 * Written in Scala using the NLP Breeze package for linear algebra computations
