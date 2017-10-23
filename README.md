@@ -1,5 +1,5 @@
 # uncertaintyscript-interpreter
-Interpreter for uncertaintyscript, a quantum scripting language. 
+Interpreter for UncertaintyScript, a quantum scripting language developed by a caffeinated UCSD undergrad at a CalTech hackathon. 
 
 ## What is this? 
 * Interpreter for a quantum information programming language
@@ -29,4 +29,4 @@ The class relationships are described in the following UML diagram. Most classes
 ![uncertaintyscript](https://github.com/nick11roberts/uncertaintyscript-interpreter/blob/master/uncertaintyscript%20(1).png)
 
 ## How do I run this?
-If you aren't familiar with Gradle, check it out [here](https://gradle.org/)
+If you aren't familiar with Gradle, check it out [here](https://gradle.org/). 
