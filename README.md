@@ -24,8 +24,6 @@ Interpreter for uncertaintyscript, a quantum scripting language.
 * Lots of caffeine 
   * It was a hackathon project after all
 
-![Interpreter pattern](https://en.wikipedia.org/wiki/Interpreter_pattern#/media/File:Interpreter_UML_class_diagram.svg)
-Format: ![Alt Text](url)
+![](https://en.wikipedia.org/wiki/Interpreter_pattern#/media/File:Interpreter_UML_class_diagram.svg)
 
-![uncertaintyscript](https://github.com/nick11roberts/uncertaintyscript-interpreter/blob/master/uncertaintyscript%20(1).png)
-Format: ![Alt Text](url)
+![](https://github.com/nick11roberts/uncertaintyscript-interpreter/blob/master/uncertaintyscript%20(1).png)
