@@ -14,6 +14,9 @@ Interpreter for UncertaintyScript, a quantum scripting language developed by a c
   * Thanks Richard Feynman!
 * Wanted to better understand the math behind quantum algorithm design
 * Wanted to understand why classical computers can’t simulate quantum computers
+* Wanted to understand interpreters
+  * More interesting and abstract than writing an interpreter for a calculator, for example
+
 
 ## How did you do this? 
 * Written in Scala using the NLP Breeze package for linear algebra computations
@@ -28,4 +31,4 @@ The class relationships are described in the following UML diagram. Most classes
 ![uncertaintyscript](https://github.com/nick11roberts/uncertaintyscript-interpreter/blob/master/uncertaintyscript%20(1).png)
 
 ## How do I run this?
-If you aren't familiar with Gradle, check it out [here](https://gradle.org/). 
+If you aren't familiar with Gradle, check it out [here](https://gradle.org/). There is a `run` task in `build.gradle`.
